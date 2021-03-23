@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.example.confrencing.Utils.Constants;
 import com.example.confrencing.activites.IncommingCall;
@@ -32,8 +33,13 @@ public class MessagingService extends FirebaseMessagingService {
             intent.putExtra(Constants.REMOTE_MESSAGE_MEETING_TYPE , remoteMessage.getData().get(Constants.REMOTE_MESSAGE_MEETING_TYPE));
             intent.putExtra(Constants.REMOTE_MESSAGE_INVITOR_TOKEN,remoteMessage.getData().get(Constants.REMOTE_MESSAGE_INVITOR_TOKEN));
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.putExtra(Constants.REMOTE_MESSAGE_MEETING_ROOM,remoteMessage.getData().get(Constants.REMOTE_MESSAGE_MEETING_ROOM));
             startActivity(intent);
 
+        }else if(type.equals(Constants.REMOTE_MESSAGE_INVITATION_RESPONSE)){
+            Intent intent = new Intent(Constants.REMOTE_MESSAGE_INVITATION_RESPONSE);
+            intent.putExtra(Constants.REMOTE_MESSAGE_INVITATION_RESPONSE,remoteMessage.getData().get(Constants.REMOTE_MESSAGE_INVITATION_RESPONSE));
+            LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
         }
 
 

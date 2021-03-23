@@ -29,6 +29,8 @@ public class Constants {
     public static final String REMOTE_MESSAGE_CALL_REJECTED = "rejected";
     public static final String REMOTE_MESSAGE_CALL_CANCELED = "canceled";
 
+    public static final String REMOTE_MESSAGE_MEETING_ROOM = "meetingRoom";
+
 
 
     public static HashMap<String,String> getRemoteMessage(){
