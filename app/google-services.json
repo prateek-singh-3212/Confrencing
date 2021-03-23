@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1088291986745",
+    "project_id": "webrtc-8857d",
+    "storage_bucket": "webrtc-8857d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088291986745:android:ba16316f12e4cc5b61dce8",
+        "android_client_info": {
+          "package_name": "com.example.confrencing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088291986745-ue9fppj5jl8l2bbnf7j69sh3i0osqcmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5heSqWwEt6LMYfD8xRFWYm6nMgJDoYU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088291986745-ue9fppj5jl8l2bbnf7j69sh3i0osqcmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

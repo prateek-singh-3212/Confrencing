@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".activites.OutgoingCall">
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textColor="@color/white"
+            android:text="Outgoing Call...."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Email"
+            android:id="@+id/User_Mail_Outgoing"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/_10sdp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/user_Image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/header_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:src="@drawable/ic_baseline_supervised_user_circle_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/user_Image"
+        android:layout_marginTop="@dimen/_100sdp">
+
+
+
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="0.5"
+            android:id="@+id/Decline_Outgoing"
+            android:src="@drawable/ic_round_call_end_24"
+            android:background="#916060"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
